@@ -1,31 +1,26 @@
 /* Funções não funcionais ex: textos, imagens...8*/
 
-import Image from 'next/image'
-import Logomarca from '../public/logo.jpg'
 
 export const metadata = {
   title: 'Glocre8s',
-}
+};
 
-function Logo({x, y, logomarca}){
-  return(
-   <div style={{left:x, top:y}} className={styles.LogoMarca}>
-    <Image className={styles.logo} width={19} height={19} src="/logo.jpg" alt='dklnvshf'/>
-    <p className= {styles.Logomarca}></p>
-   </div>
+function cimaEsquerdo({}){
+  return (
+    <p style={{left: x, top: y}} className={styles.entrar}>Sing In<span className={styles.levar}>Track</span>Wish List</p>
   );
 }
 
-export default function RootLayout({children}){
-  return(
+export default function RootLayout({ children }) {
+  return (
     <html lang="en">
       <body>
         <header>
-          <Logo x={135} y={53}/>
-          <LogoMarca x={435} y={60}/>
-
+          <Logo x={588} y={233} />
+          <cimaEsquerdo x={3} y={45}/>
+          {/* Corrigindo para usar a importação correta: */}
         </header>
       </body>
     </html>
-  )
+  );
 }

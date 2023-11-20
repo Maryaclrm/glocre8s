@@ -1,0 +1,8 @@
+.Glocre{
+    border-radius: 2px;
+    left: 20px;
+    position: absolute;
+    top: 52px;
+    border-radius: 121px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
