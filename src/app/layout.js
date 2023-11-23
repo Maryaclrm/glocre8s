@@ -4,7 +4,7 @@ import Image from 'next/image';
 import logo from '../../public/logo.jpg';
 
 export const metadata = {
-  title: 'Sign In         Track          Wish List',
+  title: 'Glocre8s',
 }
 
 function Logo ({x, y}){
@@ -12,8 +12,13 @@ function Logo ({x, y}){
     <div style={{left:x, top: y}} className={styles.logo}>
       <Image src={logo}/>
     </div>
-  )
+  );
+}
 
+function Menu1 ({x, y}){
+  return(
+    <p style={{left:x, top:y}} className={styles.menu1}>Sign In         Track          Wish List</p>
+  );
 }
 
 export default function RootLayout({ children }) {
@@ -22,6 +27,7 @@ export default function RootLayout({ children }) {
       <body>
         <header>
           <Logo x={668} y={-2}/>
+          <Menu1 x={668} y={8}/>
         </header>
         <main>
           {children}
