@@ -1,5 +1,8 @@
 body {
-  background: linear-gradient(0deg, #8489FF 0.23%, #61C0F5 99.79%);
-  color: #FFF;
-  height: 900px;
+  background-color: #FFF;
+  color: #ff8513;
+  width: 1980px;
+  height: 6000px;
+  margin: 2px;
+  border: 2px solid black;
 }
