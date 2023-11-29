@@ -1,3 +1,4 @@
+
 import './globals.css';
 import styles from './styles.module.css';
 import Image from 'next/image';
@@ -32,22 +33,24 @@ function Menu1({ x, y }) {
   );
 }
 
-function Menu2({ x, y }) {
-  return (
-    <div style={{ left: x, top: y }} className={styles.menu2Container}>
-      <input type="text" className={styles.menu2Container} placeholder='Search All Itens' />
-    </div>
-  );
-}
 
 function BotaoMenu2({ x, y }) {
   return (
     <div style={{ left: x, top: y }} className={styles.botaoMenu2}>
-      <button className={styles.botaoMenu2}>SEARCH</button>
       <Image className={styles.ftMenu2} src={carrinho} />
     </div>
   );
 }
+
+function Menu2({ x, y }) {
+  return (
+    <div style={{ left: x, top: y }} className={styles.menu2Container}>
+      <input type="text" className={styles.menu2Container} placeholder='Search All Itens' />
+      <button className={styles.botaoMenu2} >SEARCH</button>
+    </div>
+  );
+}
+
 
 export default function RootLayout({ children }) {
   return (
@@ -57,7 +60,6 @@ export default function RootLayout({ children }) {
           <Logo x={668} y={-2} />
           <Menu1 x={3} y={45} />
           <Menu2 x={1474} y={49} />
-          <BotaoMenu2 x={1480} y={49} />
         </header>
         <main>
           {children}
