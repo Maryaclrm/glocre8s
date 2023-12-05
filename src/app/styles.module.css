@@ -34,7 +34,6 @@
     width: 448px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .menu2Container {
@@ -56,40 +55,38 @@
 }
 
 .retangMenu2 {
-    border-radius: 20px;
+    border-radius: 100px;
     border: 1px solid #C4C4C4;
     background: #FFF;
 
     width: 550px;
     height: 40px;
-    background: #5bdb34;
     align-items: flex-end;
 }
 
 .botaoMenu2 {
-
-
-
     background: #FF4500;
     color: #C4C4C4;
-    border-radius: 20px;
+    border-radius: 50px;
+
     font-size: 30px;
     font-weight: bold;
+
     left: 400px;
     width: 174px;
     height: 70px;
     flex-shrink: 0;
+
     align-items: flex-end;
     position: absolute;
 }
 
 .ftMenu2 {
-    border: solid 3px green;
-    width: 550px;
+    width: 40px;
     height: 40px;
-    align-items: flex-end;
-    margin: 0px;
-    padding: 0px;
     flex-shrink: 0;
-
+    position: absolute;
+    left: 580px;
+    top: 8px;
 }
+
