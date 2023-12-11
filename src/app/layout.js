@@ -33,20 +33,12 @@ function Menu1({ x, y }) {
   );
 }
 
-
-function BotaoMenu2({ x, y }) {
-  return (
-    <div style={{ left: x, top: y }} className={styles.botaoMenu2}>
-      <Image className={styles.ftMenu2} src={carrinho} />
-    </div>
-  );
-}
-
 function Menu2({ x, y }) {
   return (
     <div style={{ left: x, top: y }} className={styles.menu2Container}>
       <input type="text" className={styles.menu2Container} placeholder='Search All Itens' />
       <button className={styles.botaoMenu2} >SEARCH</button>
+      <Image className={styles.ftMenu2} src={carrinho} />
     </div>
   );
 }

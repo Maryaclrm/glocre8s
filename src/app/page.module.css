@@ -15,3 +15,40 @@
     position: absolute;
     /*flex-shrink: 0;*/
 }
+
+.anuncioo{
+    color: #000;
+    font-family: Roboto Condensed;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin:0px;
+    padding:0;
+
+    width: 402px;
+    height: 43px;
+    position: absolute;
+    flex-shrink: 0px;
+}
+
+.botaoAnuncio {
+    border-radius: 50px;
+    background: rgba(255, 69, 0, 0.84);
+    box-shadow: 2px 3px 10px 0px rgba(27, 21, 21, 0.80);
+
+    font-size: 24px;
+    font-weight: bold;
+
+    top:603px;
+    left: 230px;
+    width: 168px;
+    height: 38px;
+    flex-shrink: 0;
+
+    margin:0px;
+    
+    align-items: flex-end;
+    position: absolute;
+}
