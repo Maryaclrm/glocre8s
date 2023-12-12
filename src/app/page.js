@@ -90,6 +90,15 @@ function Passando({x, y}){
   )
 }
 
+function NomesRetan({}){
+  return(
+    <div className='joias'>
+          <h1 className={styles.nomesRetan}>JEWELRIES</h1>
+    </div>
+
+  )
+}
+
 
 export default function Home() {
   return (
@@ -103,7 +112,8 @@ export default function Home() {
       <TextosBanner3 x={90} y={1060}/>
       <BotaoBanner x={90} y={1120}/>
       <Passando x={952} y={1840}/>
-      <DireitaSeta x={1812} y={1200}/>
+      <DireitaSeta x={1780} y={1200}/>
+      <NomesRetan x={1750} y={473}/>
     </main>
   )
 }

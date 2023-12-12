@@ -157,3 +157,38 @@
     padding: 0;
     position: absolute;
 }
+
+.joias{
+    left: 369px;
+    top: 2084px;
+    color: #000000;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+
+    border: white;
+    position: absolute;
+    flex-direction: column;
+
+}
+
+.h1{
+      left: 369px;
+    top: 2084px;
+    color: #000000;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+
+    border: white;
+    position: absolute;
+    flex-direction: column;
+}

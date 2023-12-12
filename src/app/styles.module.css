@@ -115,17 +115,237 @@
 }
 
 .quadrados{
+    position: absolute;
     width: 352px;
     height: 189px;
-    top: 1000px;
     
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    
     border-radius: 30px;
 
     margin: 0px;
 
     background: rgba(188, 179, 179, 0.61);
     box-shadow: 0px 4px 13px 2px #655959;
+
+}
+
+.dentroQuadrados{
+    margin: 0px;
+
+    width: 86px;
+    height: 86px;
+    
+    color: #000;
+    flex-shrink: 0;
+
+    direction: initial;
+    padding-top: 54px;
+}
+
+.dentroQuadrados2{
+    margin: 0px;
+
+    width: 86px;
+    height: 86px;
+    
+    color: #000;
+    flex-shrink: 0;
+
+    direction: initial;
+    padding-top: 54px;
+}
+
+.retangulo1{
+    position: absolute;
+    width: 12px;
+    height: 101px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+
+}
+
+.retangulo2{
+    position: absolute;
+    width: 12px;
+    height: 202px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+
+}
+
+.retangulo3{
+    position: absolute;
+    width: 12px;
+    height: 304px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+
+}
+
+.retangulo4{
+    position: absolute;
+    width: 101px;
+    height: 12px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo5{
+    position: absolute;
+    width: 202px;
+height: 12px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo6{
+    position: absolute;
+    width: 304px;
+    height: 12px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo7{
+    position: absolute;
+    width: 304px;
+    height: 12px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo8{
+    position: absolute;
+    width: 202px;
+    height: 12px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo9{
+    position: absolute;
+    width: 101px;
+    height: 12px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo10{
+    position: absolute;
+    width: 12px;
+    height: 304px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo11{
+    position: absolute;
+    width: 12px;
+    height: 202px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo12{
+    position: absolute;
+    width: 12px;
+    height: 101px;
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo13{
+    /*dentro dos quadrados*/
+    position: absolute;
+    width: 192px;
+    height: 7px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo15{
+    position: absolute;
+    width: 192px;
+    height: 7px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo17{
+    position: absolute;
+    width: 230px;
+    height: 7px;
+
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo19{
+    position: absolute;
+    width: 235px;
+    height: 7px;
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo20{
+    position: absolute;
+    width: 254px;
+    height: 7px;
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
+}
+
+.retangulo21{
+    position: absolute;
+   width: 129px;
+    height: 7px;
+    margin: 0px;
+
+    background: rgba(255, 69, 0, 0.84);
+    flex-direction: column;
 }
