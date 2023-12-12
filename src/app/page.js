@@ -1,5 +1,8 @@
-// import Image from 'next/image'
+import Image from 'next/image'
 import styles from './page.module.css'
+import banner from '../../public/mulher1.png'
+import passando from '../../public/passando.svg'
+import seta from '../../public/direitaseta.svg'
 
 function Anuncio({ x, y }) {
   return (
@@ -16,10 +19,73 @@ function Anuncioo({x, y}){
     That brings fulfilment!</h3>
   )
 }
+
 function BotaoAnuncio({x, y}){
   return(
     <div style={{ left: x, top: y }}>
    <button className={styles.botaoAnuncio}>ABOUT US</button>
+    </div>
+  )
+}
+
+function Banner({x, y}){
+  return(
+    <div style={{left:x, top:y }} className={styles.banner1}>
+      <Image src={banner}/>
+    </div>
+  )
+}
+
+function TextosBanner({ x, y }) {
+  return (
+    <div>
+      <h1 style={{ left: x, top: y }} className={styles.bannerTexto1}>
+        LIMITED TIME OFFER
+      </h1>
+    </div>
+  );
+}
+
+function DireitaSeta({x, y}){
+  return(
+    <div style={{left:x, top:y }} className={styles.passandoPag}>
+    <Image src={seta}/>
+    </div>
+  )
+}
+
+function TextosBanner2({x, y}){
+  return(
+    <div>
+    <h1 style={{ left: x, top: y }} className={styles.bannerTexto2}>
+    20% OFF
+    </h1>
+    </div>
+  )
+}
+
+function TextosBanner3({x, y}){
+  return(
+    <div>
+    <h1 style={{ left: x, top: y }} className={styles.bannerTexto3}>
+    All Earrings And Necklace
+    </h1>
+    </div>
+  )
+}
+
+function BotaoBanner({x, y}){
+  return(
+    <div style={{ left: x, top: y }}>
+   <button className={styles.botaoBanner}>SHOP NOW</button>
+    </div>
+  )
+}
+
+function Passando({x, y}){
+  return(
+  <div style={{left:x, top:y }} className={styles.passandoPag}>
+      <Image src={passando}/>
     </div>
   )
 }
@@ -31,6 +97,13 @@ export default function Home() {
       <Anuncio x={240} y={412} />
       <Anuncioo x={240} y={488}/>
       <BotaoAnuncio x={240} y={603}/>
+      <Banner x={0} y={782}/>
+      <TextosBanner x={90} y={866}/>
+      <TextosBanner2 x={90} y={910}/>
+      <TextosBanner3 x={90} y={1060}/>
+      <BotaoBanner x={90} y={1120}/>
+      <Passando x={952} y={1840}/>
+      <DireitaSeta x={1812} y={1200}/>
     </main>
   )
 }

@@ -52,3 +52,108 @@
     align-items: flex-end;
     position: absolute;
 }
+
+.banner1{
+    width: 2002px;
+    height: 1101px;
+
+    flex-shrink: 0;
+    margin: 0px;
+
+    align-items: flex-end;
+    padding: 0;
+    position: absolute;
+ }
+
+ .bannerTexto1{
+    color: #ffffff;
+    font-family: Roboto Condensed;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+
+    margin:0;
+    /*padding:0;*/
+
+    width: 320px;
+    height: 43px;
+    position: absolute;
+    /*flex-shrink: 0;*/
+ }
+
+ .bannerTexto2{
+    color: #ffffff;
+    font-family: Roboto Condensed;
+    font-size: 144px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+
+    margin:0;
+    /*padding:0;*/
+
+    width: 492px;
+    height: 169px;
+    position: absolute;
+    /*flex-shrink: 0;*/
+ }
+
+ .bannerTexto3{
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-size: 53px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+
+    margin:0;
+    /*padding:0;*/
+
+    width: 540px;
+    height: 62px;
+    position: absolute;
+    /*flex-shrink: 0;*/
+ }
+
+ .botaoBanner {
+    border-radius: 50px;
+    background: rgba(255, 69, 0, 0.84);
+    box-shadow: 2px 3px 10px 0px rgba(27, 21, 21, 0.80);
+
+    color: #FFF;
+    font-family: Roboto Condensed;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    top:1420px;
+    left: 90px;
+    width: 350px;
+    height: 97px;
+    flex-shrink: 0;
+
+    margin:0px;
+    
+    align-items: flex-end;
+    position: absolute;
+}
+
+.passandoPag{
+    width: 126px;
+    height: 191px;
+
+    flex-shrink: 0;
+    margin: 0px;
+
+    align-items: flex-end;
+    padding: 0;
+    position: absolute;
+}

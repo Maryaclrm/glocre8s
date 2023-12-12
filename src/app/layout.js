@@ -1,4 +1,3 @@
-
 import './globals.css';
 import styles from './styles.module.css';
 import Image from 'next/image';
@@ -43,6 +42,36 @@ function Menu2({ x, y }) {
   );
 }
 
+function Menu3({x, y}){
+  return(
+    <div style={{ left: x, top: y }} className={styles.menu3container}>
+    <p className={styles.menuItem}>SHOP  BY  CATEGORY</p>
+    </div>
+  )
+}
+
+function Quadrados1({x, y}){
+  return(
+      <div style={{left:x, top:y }} className={styles.quadrados}>
+      </div>
+      
+  )
+}
+
+function Quadrados2({x, y}){
+  return(
+      <div style={{left:x, top:y }} className={styles.quadrados}>
+      </div>
+      
+  )
+}
+
+function Quadrados3({x, y}){
+  return(
+      <div style={{left:x, top:y }} className={styles.quadrados}>
+      </div>
+  )
+}
 
 export default function RootLayout({ children }) {
   return (
@@ -52,6 +81,10 @@ export default function RootLayout({ children }) {
           <Logo x={668} y={-2} />
           <Menu1 x={3} y={45} />
           <Menu2 x={1474} y={49} />
+          <Menu3 x={540} y={1900}/>
+          <Quadrados1 x={369} y={2084}/>
+          <Quadrados2 x={380} y={2084}/>
+          <Quadrados3 x={420} y={2084}/>
         </header>
         <main>
           {children}
