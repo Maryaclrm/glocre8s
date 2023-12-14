@@ -90,30 +90,6 @@
     top: 8px;
 }
 
-.menu3container{
-    color: #000;
-    text-align: center;
-    font-family: Roboto Condensed;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 7.2px;
-
-    font-size: 48px;
-    font-weight: bold;
-
-    width: 900px;
-    height: 56px;
-    flex-shrink: 0;
-
-    margin:0px;
-    
-    align-items: flex-end;
-    position: absolute;
-
-}
-
 .quadrados{
     position: absolute;
     width: 352px;
@@ -158,194 +134,94 @@
 .retangulo1{
     position: absolute;
     width: 12px;
-    height: 101px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-
 }
 
-.retangulo2{
+.retan{
     position: absolute;
-    width: 12px;
-    height: 202px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-
-}
-
-.retangulo3{
-    position: absolute;
-    width: 12px;
-    height: 304px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-
-}
-
-.retangulo4{
-    position: absolute;
-    width: 101px;
-    height: 12px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-    flex-direction: column;
-}
-
-.retangulo5{
-    position: absolute;
-    width: 202px;
-height: 12px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-    flex-direction: column;
-}
-
-.retangulo6{
-    position: absolute;
-    width: 304px;
-    height: 12px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-    flex-direction: column;
-}
-
-.retangulo7{
-    position: absolute;
-    width: 304px;
-    height: 12px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-    flex-direction: column;
-}
-
-.retangulo8{
-    position: absolute;
-    width: 202px;
-    height: 12px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-    flex-direction: column;
-}
-
-.retangulo9{
-    position: absolute;
-    width: 101px;
-    height: 12px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-    flex-direction: column;
-}
-
-.retangulo10{
-    position: absolute;
-    width: 12px;
-    height: 304px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-    flex-direction: column;
-}
-
-.retangulo11{
-    position: absolute;
-    width: 12px;
-    height: 202px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-    flex-direction: column;
-}
-
-.retangulo12{
-    position: absolute;
-    width: 12px;
-    height: 101px;
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-    flex-direction: column;
-}
-
-.retangulo13{
-    /*dentro dos quadrados*/
-    position: absolute;
-    width: 192px;
-    height: 7px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-    flex-direction: column;
-}
-
-.retangulo15{
-    position: absolute;
-    width: 192px;
-    height: 7px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-    flex-direction: column;
-}
-
-.retangulo17{
-    position: absolute;
-    width: 230px;
-    height: 7px;
-
-    margin: 0px;
-
-    background: rgba(255, 69, 0, 0.84);
-    flex-direction: column;
-}
-
-.retangulo19{
-    position: absolute;
-    width: 235px;
+    width: 129px;
     height: 7px;
     margin: 0px;
 
-    background: rgba(255, 69, 0, 0.84);
+    background: rgba(54, 255, 32, 0.84);
+    margin: 0;
+}
+
+.linha{
+    position: absolute;
+    width: 1980px;
+    height: 1px;
+
+    flex-shrink: 0;
+    margin: 0px;
+
+    background: #C4C4C4;
     flex-direction: column;
 }
 
-.retangulo20{
-    position: absolute;
-    width: 254px;
-    height: 7px;
-    margin: 0px;
+.textosPrin{
+    color: #000;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 7.2px;
 
-    background: rgba(255, 69, 0, 0.84);
-    flex-direction: column;
+    font-size: 48px;
+    font-weight: bold;
+
+    width: 900px;
+    height: 56px;
+    flex-shrink: 0;
+
+    margin:0px;
+    
+    align-items: center;
+    position: absolute;
+
 }
 
-.retangulo21{
+.produto{
     position: absolute;
-   width: 129px;
-    height: 7px;
+    width: 364px;
+    height: 399px;
+    flex-shrink: 0;
+    
+    border-radius: 30px;
     margin: 0px;
+    position: absolute;
+    align-items: center;
 
-    background: rgba(255, 69, 0, 0.84);
+    background: rgba(188, 179, 179, 0.61);
+    box-shadow: 0px 4px 13px 2px #655959;
+}
+
+.review{
+    color: #000;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+
+    position: absolute;
+    margin: 0;
+    /*padding: 0;*/
+    right: 800px;
+
+    border-radius: 50px;
+    flex-direction: column;
+    flex-direction: center;
+}
+
+.fundo{
+    position: absolute;
+    width: 1980px;
+    height: 882px;
+
+    background-color: #D23B03;
     flex-direction: column;
 }

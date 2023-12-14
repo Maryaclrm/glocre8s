@@ -12,6 +12,19 @@ import papel from '../../public/papel.svg';
 import camisa from '../../public/camisa.svg';
 import sabao from '../../public/sabao.svg';
 import chapeu from '../../public/chapeu.svg';
+import agenda from '../../public/agenda.png';
+import almofada from '../../public/almofada.png';
+import bandana from '../../public/bandana.png';
+import colar from '../../public/colar.png';
+import couro from '../../public/couro.png';
+import mesa from '../../public/mesa.png';
+import pano from '../../public/pano.png';
+import parede from '../../public/parede.png';
+import pessoa1 from '../../public/pessoa1.png';
+import pessoa2 from '../../public/pessoa2.png';
+import pessoa3 from '../../public/pessoa3.png';
+import estrelas1 from '../../public/estrelas1.svg';
+import estrelas2 from '../../public/estrelas2.svg';
 
 export const metadata = {
   title: 'Glocre8s',
@@ -46,14 +59,6 @@ function Menu2({ x, y }) {
       <Image className={styles.ftMenu2} src={carrinho} />
     </div>
   );
-}
-
-function Menu3({x, y}){
-  return(
-    <div style={{ left: x, top: y }} className={styles.menu3container}>
-    <p className={styles.menuItem}>SHOP  BY  CATEGORY</p>
-    </div>
-  )
 }
 
 function Quadrados1({x, y}){
@@ -104,175 +109,85 @@ function Quadrados6({x, y}){
   )
 }
 
-function Retangulo1({x, y}){
+function Retangulo1({x, y, cor, altura}){
   return(
-     <div style={{left:x, top:y }} className={styles.retangulo1}>
+     <div style={{left:x, top:y, background:cor, height: altura}} className={styles.retangulo1}>
+      </div>
+      //menor da frente
+  )
+}
+
+function Retangulo2({x, y, cor, altura}){
+  return(
+     <div style={{left:x, top:y , background:cor, height: altura}} className={styles.retangulo1}>
+      </div>
+      //do meio
+  )
+}
+
+function Retangulo3({x, y, cor, altura}){
+  return(
+     <div style={{left:x, top:y,  background:cor, height: altura}} className={styles.retangulo1}>
+      </div>
+      //maior
+  )
+}
+
+function Linha({x, y}){
+  return(
+     <div style={{left:x, top:y }} className={styles.linha}>
       </div>
   )
 }
 
-function Retangulo2({x, y}){
+function TEXTOS({x, y, nome}){
   return(
-     <div style={{left:x, top:y }} className={styles.retangulo2}>
+    <div style={{ left: x, top: y }} className={styles.textosPrin}>
+    <p>{nome}</p>
+    </div>
+  )
+}
+
+function Produto({x, y, imagem, nome, preco}){
+  return(
+      <div style={{left:x, top:y }} className={styles.produto}>
+        <Image src={imagem}/>
+        <p>{nome}</p>
+        <p>{preco}</p>
+        <button className={styles.botaoBanner}>ADD TO CART</button>
       </div>
   )
 }
 
-function Retangulo3({x, y}){
+function Review({x, y, fotos, data, estrelas, nota, comentario, produto, nome}){
   return(
-     <div style={{left:x, top:y }} className={styles.retangulo3}>
+    <div style={{left: x, top:y}} className={styles.review}>
+      <Image src={fotos}/>
+      <p>{data}</p>
+      <Image src={estrelas}/>
+      <p>{nota}</p>
+      <p>{comentario}</p>
+      <Image src={produto}/>
+      <p>{nome}</p>
+    </div>
+  )
+}
+
+function Fundo ({x,y, children}){
+  return(
+    <div style={{left:x, top:y }} className={styles.fundo}>
+      {children}
       </div>
   )
 }
 
 
-function Retangulo4({x, y}){
+function Retang({x, y}){
   return(
-     <div style={{left:x, top:y }} className={styles.retangulo4}>
+    <div style={{left:x, top:y }} className={styles.retan}>
       </div>
   )
 }
-
-function Retangulo5({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo5}>
-      </div>
-  )
-}
-
-function Retangulo6({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo6}>
-      </div>
-  )
-}
-
-function Retangulo7({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo7}>
-      </div>
-  )
-}
-
-function Retangulo8({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo8}>
-      </div>
-  )
-}
-
-function Retangulo9({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo9}>
-      </div>
-  )
-}
-
-function Retangulo10({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo10}>
-      </div>
-  )
-}
-
-function Retangulo11({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo11}>
-      </div>
-  )
-}
-
-function Retangulo12({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo12}>
-      </div>
-  )
-}
-
-function Retangulo13({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo13}>
-      </div>
-  )
-}
-
-function Retangulo14({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo13}>
-      </div>
-  )
-}
-
-function Retangulo15({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo15}>
-      </div>
-  )
-}
-
-function Retangulo16({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo15}>
-      </div>
-  )
-}
-
-function Retangulo17({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo17}>
-      </div>
-  )
-}
-
-function Retangulo18({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo17}>
-      </div>
-  )
-}
-
-function Retangulo19({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo19}>
-      </div>
-  )
-}
-
-function Retangulo20({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo19}>
-      </div>
-  )
-}
-
-function Retangulo21({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo20}>
-      </div>
-  )
-}
-
-function Retangulo22({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo20}>
-      </div>
-  )
-}
-
-function Retangulo23({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo21}>
-      </div>
-  )
-}
-
-function Retangulo24({x, y}){
-  return(
-     <div style={{left:x, top:y }} className={styles.retangulo21}>
-      </div>
-  )
-}
-
 
 export default function RootLayout({ children }) {
   return (
@@ -282,42 +197,59 @@ export default function RootLayout({ children }) {
           <Logo x={668} y={-2} />
           <Menu1 x={3} y={45} />
           <Menu2 x={1400} y={49} />
-          <Menu3 x={540} y={1900}/>
-          <div className='Squares'>
-                      <div> 
-                      <Quadrados1 x={369} y={2084} />
-                      </div>
+
+          <Quadrados1 x={369} y={2084}/>
           <Quadrados2 x={819} y={2084}/>
           <Quadrados3 x={1261} y={2084}/>
           <Quadrados4 x={369} y={2402}/>
           <Quadrados5 x={819} y={2402}/>
           <Quadrados6 x={1261} y={2402}/>
-          </div>
-          <Retangulo1 x={44} y={1961}/>
-          <Retangulo2 x={24} y={1961}/>
-          <Retangulo3 x={0} y={1961}/>
-          <Retangulo4 x={0} y={2728}/>
-          <Retangulo5 x={0} y={2750}/>
-          <Retangulo6 x={0} y={2772}/>
-          <Retangulo7 x={1700} y={1961}/>
-          <Retangulo8 x={1802} y={1983}/>
-          <Retangulo9 x={1903} y={2005}/>
-          <Retangulo10 x={1968} y={2480}/>
-          <Retangulo11 x={1946} y={2582}/>
-          <Retangulo12 x={1924} y={2683}/>
-          <Retangulo13 x={473} y={2139}/>
-          <Retangulo14 x={473} y={2205}/>
-          <Retangulo15 x={486} y={2454}/>
-          <Retangulo18 x={486} y={2511}/>
-          <Retangulo16 x={925} y={2143}/>
-          <Retangulo17 x={925} y={2207}/>
-          <Retangulo18 x={925} y={2207}/>
-          <Retangulo19 x={920} y={2454}/>
-          <Retangulo20 x={920} y={2511}/>
-          <Retangulo21 x={1360} y={2143}/>
-          <Retangulo22 x={1360} y={2207}/>
-          <Retangulo23 x={1386} y={2454}/>
-          <Retangulo24 x={1386} y={2511}/>
+
+          <Retangulo1 x={44} y={1961} cor="red" altura={101}/>
+          <Retangulo1 x={0} y={2728} cor="white" altura={101}/>
+
+          <Retangulo2 x={24} y={1961} cor="red" altura={202}/>
+
+          <Retangulo3 x={0} y={1961} cor="red" altura={304}/>
+
+          <Retang x={10} y={5200}/>
+
+          <Linha x={0} y={2873}/>
+          <Linha x={0} y={4100}/>
+          <TEXTOS  x={724} y={1961} nome="SHOP  BY  CATEGORY"/>
+          <TEXTOS  x={724} y={2919} nome="FEATURED ITEMS"/>
+          <TEXTOS  x={724} y={4109} nome="REVIEWS"/>
+
+            <Produto x={101} y={3077} imagem={bandana}nome="Red And Black Head Wraps| 100% cotton" preco="$10.5" />
+
+            <Produto x={564} y={3077} imagem={almofada}nome="African Print Cushion Cover " preco="$28.5" />
+
+            <Produto x={1020} y={3077} imagem={colar}nome="Summer Earrings For Women And Kids" preco="$3.2" />
+
+            <Produto x={1469} y={3077} imagem={couro}nome="Goat Milk Turmeric Glow Soap" preco="$5.3" />
+
+            <Produto x={101} y={3576} imagem={agenda}nome="Wedding Anniversary Printable Gift" preco="$7.2" />
+
+            <Produto x={564} y={3576} imagem={parede}nome="White And Black African Wax Fabric| 100% cotton" preco="$9.2" />
+
+            <Produto x={1020} y={3576} imagem={pano}nome="Shades Of Red Fat Quarters Bundle Fabrics" preco="$5.8" />
+
+            <Produto x={1469} y={3576} imagem={mesa}nome="African Print Table Runner With 4 Napkins" preco="$5.3" />
+
+          <Review x={0} y={4322} fotos={pessoa3} data="Jane on 15 April,2021 " estrelas={estrelas1} nota="5.0/5.0" comentario="Thank you so much for delivering a quality piece.
+          Will be using it with one of my outfits.Just not sure which one!!!!" produto={parede} nome="White And Black African
+            Wax Fabric"/>
+
+            <Review x={830} y={4322} fotos={pessoa2} data="Femi on 3 April,2021" estrelas={estrelas2} nota="4.5/5.0" comentario="This is awesome. My wife fell in love with it at first sight." produto={agenda} nome="Wedding Anniversay Printable Gift"/>
+
+            <Review x={1433} y={4322} fotos={pessoa1} data="Ife on 25 March,2021" estrelas={estrelas1} nota="5.0/5.0" comentario="I love this soap. Great on my sensitive skin." produto={couro} nome="White And Black African
+            Wax Fabric"/>
+
+          <Fundo x={0} y={5200}>
+          <Retangulo1 x={44} y={0} cor="white"/>
+          </Fundo>
+
+
         </header>
         <main>
           {children}
@@ -326,3 +258,5 @@ export default function RootLayout({ children }) {
     </html>
   )
 }
+
+//TOP É Y , LEFT É X
