@@ -158,26 +158,7 @@
     position: absolute;
 }
 
-.Nomeretan1{
-    color: #000;
-    text-align: center;
-    font-family: Roboto Condensed;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 3.6px;
-
-    margin:0;
-    /*padding:0;*/
-
-    width: 192px;
-    height: 42px;
-    position: absolute;
-    /*flex-shrink: 0;*/
-}
-
-.Nomeretan2{
+.Nomeretan{
     color: #000;
     text-align: center;
     font-family: Roboto Condensed;
@@ -190,78 +171,6 @@
     margin:0;
     padding:0;
 
-    height: 40px;
-    position: absolute;
-    white-space: nowrap;
-}
-.Nomeretan3{
-    color: #000;
-    text-align: center;
-    font-family: Roboto Condensed;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 1.8px;
-
-    margin:0;
-    padding:0;
-    
-    height: 20px;
-    position: absolute;
-    white-space: nowrap;
-}
-
-.Nomeretan4{
-    color: #000;
-    text-align: center;
-    font-family: Roboto Condensed;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 7.2px;
-
-    margin:0;
-    padding:0;
-    
-    height: 42px;
-    position: absolute;
-    white-space: nowrap;
-}
-
-.Nomeretan5{
-    color: #000;
-    text-align: center;
-    font-family: Roboto Condensed;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 4.32px;
-
-    margin:0;
-    padding:0;
-    
-    height: 42px;
-    position: absolute;
-    white-space: nowrap;
-}
-
-.Nomeretan6{
-    color: #000;
-    text-align: center;
-    font-family: Roboto Condensed;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 7.2px;
-
-    margin:0;
-    padding:0;
-    
-    height: 42px;
     position: absolute;
     white-space: nowrap;
 }

@@ -225,3 +225,90 @@
     background-color: #D23B03;
     flex-direction: column;
 }
+
+.maiores{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+
+    position: absolute;
+    margin:0;
+    padding:0;
+}
+
+.menores{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+
+    position: absolute;
+    margin:0;
+    padding:0;
+}
+
+.redeSociais{
+    width: 40px;
+    height: 60px;
+
+    margin:0;
+    padding:0;
+    flex-shrink: 0;
+    position: absolute;
+}
+
+.apps{
+    width: 40px;
+    height: 60px;
+
+    margin:0;
+    padding:0;
+    flex-shrink: 0;
+    position: absolute;
+}
+
+.ultimo{
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto Condensed;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+
+    margin:0;
+    padding:0;
+    flex-shrink: 0;
+    position: absolute;
+}
+
+.Pague{
+    width: 40px;
+    height: 60px;
+
+    margin:0;
+    padding:0;
+    flex-shrink: 0;
+    position: absolute;
+}
+
+.linhaQuad{
+    width: 192px;
+    height: 7px;
+
+    flex-shrink: 0;
+   color: #FF4500D6;
+   position: absolute;
+   margin: 0px;
+   flex-direction: column;
+}

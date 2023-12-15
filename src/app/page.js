@@ -91,50 +91,10 @@ function Passando({x, y}){
   )
 }
 
-function NomesRetan1({x, y}){
+function NomesRetan({x, y, texto}){
   return(
-    <div style={{left:x, top:y}} className={styles.Nomeretan1}>
-          <h1 className={styles.nomesRetan}>JEWELRIES</h1>
-    </div>
-  )
-}
-
-function NomesRetan2({x, y}){
-  return(
-    <div style={{left:x, top:y}} className={styles.Nomeretan1}>
-          <h1 className={styles.nomesRetan2}>HOME DECOR</h1>
-    </div>
-  )
-}
-
-function NomesRetan3({x, y}){
-  return(
-    <div style={{left:x, top:y}} className={styles.Nomeretan3}>
-          <h1 className={styles.nomesRetan3}>DIGITAL PRINTS</h1>
-    </div>
-  )
-}
-
-function NomesRetan4({x, y}){
-  return(
-    <div style={{left:x, top:y}} className={styles.Nomeretan4}>
-          <h1 className={styles.nomesRetan5}>FABRICS</h1>
-    </div>
-  )
-}
-
-function NomesRetan5({x, y}){
-  return(
-    <div style={{left:x, top:y}} className={styles.Nomeretan5}>
-          <h1 className={styles.nomesRetan5}>HEAD WRAPS</h1>
-    </div>
-  )
-}
-
-function NomesRetan6({x, y}){
-  return(
-    <div style={{left:x, top:y}} className={styles.Nomeretan6}>
-          <h1 className={styles.nomesRetan6}>SOAPS</h1>
+    <div style={{left:x, top:y}} className={styles.Nomeretan}>
+          <p>{texto}</p>
     </div>
   )
 }
@@ -163,14 +123,14 @@ export default function Home() {
       <Passando x={952} y={1840}/>
       <DireitaSeta x={1780} y={1200}/>
 
-      <NomesRetan1 x={480} y={2150}/>
-      <NomesRetan2 x={925} y={2150}/>
-      <NomesRetan3 x={1350} y={2150}/>
-      <NomesRetan4 x={480} y={2467}/>
-      <NomesRetan5 x={925} y={2467}/>
-      <NomesRetan6 x={1382} y={2467}/>
+      <NomesRetan x={480} y={2130} texto="JEWELRIES"/>
+      <NomesRetan x={925} y={2130} texto="HOME DECOR"/>
+      <NomesRetan x={1350} y={2150}texto="DIGITAL PRINTS"/>
+      <NomesRetan x={480} y={2467}texto="FABRICS"/>
+      <NomesRetan x={925} y={2467}texto="HEAD WRAPS"/>
+      <NomesRetan x={1382} y={2467}texto="SOAPS"/>
 
-      <Paginas x={999} y={5114}/>
+      <Paginas x={999} y={5050}/>
 
     </main>
   )

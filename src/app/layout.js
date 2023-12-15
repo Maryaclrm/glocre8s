@@ -25,6 +25,16 @@ import pessoa2 from '../../public/pessoa2.png';
 import pessoa3 from '../../public/pessoa3.png';
 import estrelas1 from '../../public/estrelas1.svg';
 import estrelas2 from '../../public/estrelas2.svg';
+import facebook from '../../public/facebook.svg';
+import insta from '../../public/insta.svg';
+import twitter from '../../public/twitter.svg';
+import youtube from '../../public/youtube.svg';
+import apple from '../../public/apple.svg';
+import android from '../../public/android.svg';
+import local from '../../public/localizacao.svg';
+import master from '../../public/master.svg';
+import visa from '../../public/visa.svg';
+import paypal from '../../public/paypal.svg';
 
 export const metadata = {
   title: 'Glocre8s',
@@ -189,6 +199,58 @@ function Retang({x, y}){
   )
 }
 
+function TextosMaiores({x, y, texto}){
+  return(
+    <div style={{ left: x, top: y }} className={styles.maiores}> 
+    <p>{texto}</p></div>
+  )
+}
+
+function TextosMenores({x, y, texto}){
+  return(
+    <div style={{ left: x, top: y }} className={styles.menores}> 
+    <p>{texto}</p></div>
+  )
+}
+
+function Redes({x, y, rede}){
+  return(
+    <div style={{left: x, top:y}} className={styles.redeSociais}>
+      <Image src={rede}/>
+    </div>
+  )
+}
+
+function App ({x, y, tipo}){
+  return(
+    <div style={{left:x, top:y}} className={styles.apps}>
+      <Image src={tipo}/>
+    </div>
+  )
+}
+
+function Ultimo({x, y, texto}){
+  return(
+    <div style={{ left: x, top: y }} className={styles.ultimo}> 
+    <p>{texto}</p></div>
+  )
+}
+
+function Pagamento({x, y, pague}){
+  return(
+    <div style={{ left: x, top: y }} className={styles.Pague}> 
+    <Image src={pague}/></div>
+  )
+}
+
+function LinhaQuad({x, y}){
+  return(
+    <div style={{left:x, top:y }} className={styles.linhaQuad}>
+    </div>
+  )
+}
+
+//TOP É Y , LEFT É X
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -196,7 +258,8 @@ export default function RootLayout({ children }) {
         <header>
           <Logo x={668} y={-2} />
           <Menu1 x={3} y={45} />
-          <Menu2 x={1400} y={49} />
+          <Menu2 x={1350} y={49} />
+          
 
           <Quadrados1 x={369} y={2084}/>
           <Quadrados2 x={819} y={2084}/>
@@ -205,14 +268,23 @@ export default function RootLayout({ children }) {
           <Quadrados5 x={819} y={2402}/>
           <Quadrados6 x={1261} y={2402}/>
 
-          <Retangulo1 x={44} y={1961} cor="red" altura={101}/>
-          <Retangulo1 x={0} y={2728} cor="white" altura={101}/>
+          <LinhaQuad x={473} y={2139}/>
 
-          <Retangulo2 x={24} y={1961} cor="red" altura={202}/>
 
-          <Retangulo3 x={0} y={1961} cor="red" altura={304}/>
+          <Retangulo1 x={44} y={1961} cor="#FF4500D6" altura={101}/>
+          <Retangulo1 x={44} y={2760} cor="#FF4500D6" altura={101}/>
+          <Retangulo1 x={1924} y={2760} cor="#FF4500D6" altura={101}/>
+          <Retangulo1 x={1922} y={1961} cor="#FF4500D6" altura={101}/>
 
-          <Retang x={10} y={5200}/>
+          <Retangulo2 x={22} y={1961} cor="#FF4500D6" altura={202}/>
+          <Retangulo2 x={22} y={2660} cor="#FF4500D6" altura={202}/>
+          <Retangulo2 x={1946} y={2660} cor="#FF4500D6" altura={202}/>
+          <Retangulo2 x={1944} y={1961} cor="#FF4500D6" altura={202}/>
+
+          <Retangulo3 x={0} y={1961} cor="#FF4500D6" altura={304}/>
+          <Retangulo3 x={0} y={2560} cor="#FF4500D6" altura={304}/>
+          <Retangulo3 x={1970} y={2560} cor="#FF4500D6" altura={304}/>
+          <Retangulo3 x={1970} y={1961} cor="#FF4500D6" altura={304}/>
 
           <Linha x={0} y={2873}/>
           <Linha x={0} y={4100}/>
@@ -236,20 +308,73 @@ export default function RootLayout({ children }) {
 
             <Produto x={1469} y={3576} imagem={mesa}nome="African Print Table Runner With 4 Napkins" preco="$5.3" />
 
-          <Review x={0} y={4322} fotos={pessoa3} data="Jane on 15 April,2021 " estrelas={estrelas1} nota="5.0/5.0" comentario="Thank you so much for delivering a quality piece.
+          <Review x={0} y={4250} fotos={pessoa3} data="Jane on 15 April,2021 " estrelas={estrelas1} nota="5.0/5.0" comentario="Thank you so much for delivering a quality piece.
           Will be using it with one of my outfits.Just not sure which one!!!!" produto={parede} nome="White And Black African
             Wax Fabric"/>
 
-            <Review x={830} y={4322} fotos={pessoa2} data="Femi on 3 April,2021" estrelas={estrelas2} nota="4.5/5.0" comentario="This is awesome. My wife fell in love with it at first sight." produto={agenda} nome="Wedding Anniversay Printable Gift"/>
+            <Review x={830} y={4250} fotos={pessoa2} data="Femi on 3 April,2021" estrelas={estrelas2} nota="4.5/5.0" comentario="This is awesome. My wife fell in love with it at first sight." produto={agenda} nome="Wedding Anniversay Printable Gift"/>
 
-            <Review x={1433} y={4322} fotos={pessoa1} data="Ife on 25 March,2021" estrelas={estrelas1} nota="5.0/5.0" comentario="I love this soap. Great on my sensitive skin." produto={couro} nome="White And Black African
+            <Review x={1433} y={4250} fotos={pessoa1} data="Ife on 25 March,2021" estrelas={estrelas1} nota="5.0/5.0" comentario="I love this soap. Great on my sensitive skin." produto={couro} nome="White And Black African
             Wax Fabric"/>
 
-          <Fundo x={0} y={5200}>
-          <Retangulo1 x={44} y={0} cor="white"/>
+          <Fundo x={0} y={5120}>
+          <Retangulo1 x={22} y={0} cor="white" altura={202}/>
+          <Retangulo1 x={22} y={680} cor="white" altura={202}/>
+          <Retangulo1 x={1940} y={680} cor="white" altura={202}/>
+          <Retangulo1 x={1940} y={0} cor="white" altura={202}/>
+
+          <Retangulo2 x={44} y={0} cor="white" altura={101}/>
+          <Retangulo2 x={44} y={785} cor="white" altura={101}/>
+          <Retangulo2 x={1900} y={785} cor="white" altura={101}/>
+          <Retangulo2 x={1910} y={0} cor="white" altura={101}/>
+
+          <Retangulo3 x={0} y={0} cor="white" altura={304}/>
+          <Retangulo3 x={0} y={580} cor="white" altura={304}/>
+          <Retangulo3 x={1970} y={580} cor="white" altura={304}/>
+          <Retangulo3 x={1970} y={0} cor="white" altura={304}/>
+
+          <TextosMaiores x={118} y={69} texto="HELP & SUPPORT"/>
+          <TextosMaiores x={452} y={69} texto="COMPANY INFO"/>
+          <TextosMaiores x={759} y={69} texto="CUSTOMER CARE"/>
+          <TextosMaiores x={1195} y={69} texto="FIND US ON"/>
+          <TextosMaiores x={1572} y={69} texto="APP"/>
+          <TextosMaiores x={1195} y={559} texto="WE ACCEPT"/>
+
+          <TextosMenores x={118} y={125} texto="Shipping Info"/>
+          <TextosMenores x={118} y={165} texto="Returns"/>
+          <TextosMenores x={118} y={185} texto="How To Order"/>
+          <TextosMenores x={118} y={215} texto="How To Track"/>
+          <TextosMenores x={118} y={245} texto="Size Guide"/>
+
+          <TextosMenores x={452} y={125} texto="About GloCre8s"/>
+          <TextosMenores x={452} y={155} texto="Affiliate"/>
+          <TextosMenores x={452} y={185} texto="Fashion Vlog"/>
+
+          <TextosMenores x={759} y={129} texto="Contact US"/>
+          <TextosMenores x={759} y={155} texto="Payment Method"/>
+          <TextosMenores x={759} y={185} texto="Offer Redemption"/>
+
+          <Redes x={1192} y={132} rede={facebook}/>
+          <Redes x={1262} y={132} rede={twitter}/>
+          <Redes x={1332} y={132} rede={insta}/>
+          <Redes x={1402} y={132} rede={youtube}/>
+          <Redes x={639} y={665} rede={local}/>
+
+          <App x={1572} y={132} tipo={apple}/>
+          <App x={1642} y={132} tipo={android}/>
+
+          <Ultimo x={118} y={555} texto="©2021 GloCre8s All Rights Reserved"/>
+          <Ultimo x={118} y={599} texto=" Privacy Center  |"/> 
+          <Ultimo x={339} y={599} texto="Privacy & Cookie Policy  |"/>
+          <Ultimo x={679} y={599} texto="Manage Cookies  |"/>
+          <Ultimo x={123} y={639} texto="Terms & Conditions |"/>
+          <Ultimo x={398} y={639} texto="Copyright Notice |"/>
+          <Ultimo x={667} y={639} texto="England |"/>
+
+          <Pagamento x={1200} y={630} pague={paypal}/>
+          <Pagamento x={1265} y={630} pague={master}/>
+          <Pagamento x={1330} y={630} pague={visa}/>
           </Fundo>
-
-
         </header>
         <main>
           {children}
