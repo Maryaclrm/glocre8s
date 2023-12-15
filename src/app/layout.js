@@ -172,13 +172,10 @@ function Produto({x, y, imagem, nome, preco}){
 function Review({x, y, fotos, data, estrelas, nota, comentario, produto, nome}){
   return(
     <div style={{left: x, top:y}} className={styles.review}>
-      <Image src={fotos}/>
-      <p>{data}</p>
-      <Image src={estrelas}/>
-      <p>{nota}</p>
+      <Image src={fotos}/><p>{data}</p>
+      <Image src={estrelas}/><p>{nota}</p>
       <p>{comentario}</p>
-      <Image src={produto}/>
-      <p>{nome}</p>
+      <Image src={produto}/><p>{nome}</p>
     </div>
   )
 }
@@ -187,14 +184,6 @@ function Fundo ({x,y, children}){
   return(
     <div style={{left:x, top:y }} className={styles.fundo}>
       {children}
-      </div>
-  )
-}
-
-
-function Retang({x, y}){
-  return(
-    <div style={{left:x, top:y }} className={styles.retan}>
       </div>
   )
 }
@@ -273,24 +262,24 @@ export default function RootLayout({ children }) {
 
           <Retangulo1 x={44} y={1961} cor="#FF4500D6" altura={101}/>
           <Retangulo1 x={44} y={2760} cor="#FF4500D6" altura={101}/>
-          <Retangulo1 x={1924} y={2760} cor="#FF4500D6" altura={101}/>
-          <Retangulo1 x={1922} y={1961} cor="#FF4500D6" altura={101}/>
+          <Retangulo1 x={1800} y={2760} cor="#FF4500D6" altura={101}/>
+          <Retangulo1 x={1800} y={1961} cor="#FF4500D6" altura={101}/>
 
           <Retangulo2 x={22} y={1961} cor="#FF4500D6" altura={202}/>
           <Retangulo2 x={22} y={2660} cor="#FF4500D6" altura={202}/>
-          <Retangulo2 x={1946} y={2660} cor="#FF4500D6" altura={202}/>
-          <Retangulo2 x={1944} y={1961} cor="#FF4500D6" altura={202}/>
+          <Retangulo2 x={1820} y={2660} cor="#FF4500D6" altura={202}/>
+          <Retangulo2 x={1820} y={1961} cor="#FF4500D6" altura={202}/>
 
           <Retangulo3 x={0} y={1961} cor="#FF4500D6" altura={304}/>
           <Retangulo3 x={0} y={2560} cor="#FF4500D6" altura={304}/>
-          <Retangulo3 x={1970} y={2560} cor="#FF4500D6" altura={304}/>
-          <Retangulo3 x={1970} y={1961} cor="#FF4500D6" altura={304}/>
+          <Retangulo3 x={1840} y={2560} cor="#FF4500D6" altura={304}/>
+          <Retangulo3 x={1840} y={1961} cor="#FF4500D6" altura={304}/>
 
           <Linha x={0} y={2873}/>
           <Linha x={0} y={4100}/>
-          <TEXTOS  x={724} y={1961} nome="SHOP  BY  CATEGORY"/>
-          <TEXTOS  x={724} y={2919} nome="FEATURED ITEMS"/>
-          <TEXTOS  x={724} y={4109} nome="REVIEWS"/>
+          <TEXTOS  x={600} y={1961} nome="SHOP  BY  CATEGORY"/>
+          <TEXTOS  x={600} y={2919} nome="FEATURED ITEMS"/>
+          <TEXTOS  x={550} y={4109} nome="REVIEWS"/>
 
             <Produto x={101} y={3077} imagem={bandana}nome="Red And Black Head Wraps| 100% cotton" preco="$10.5" />
 
